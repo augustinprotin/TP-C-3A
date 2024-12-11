@@ -28,7 +28,14 @@ Chambre::Chambre(int num, format format_chambre, double prix_par_nuit):
     prix (prix_par_nuit)
 {}
 
+
 double Chambre::editPrice(double newValue) {
     prix = newValue;
     return newValue;
+}
+
+std::string Chambre::toString() {
+    return "Numeros de chambre : " + std::to_string(numeros) + "\n" +
+        "Format chambre : " + std::to_string(format_chambre) + "\n" +
+        "prix chambre : " + std::to_string(prix) + "\n";
 }

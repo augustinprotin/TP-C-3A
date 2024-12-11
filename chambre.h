@@ -36,6 +36,8 @@ public:
     Chambre();
     Chambre(int num, format format_chambre, double prix_par_nuit);
     double editPrice(double newValue);
+
+    std::string Chambre::toString();
 };
 
 
