@@ -5,9 +5,14 @@
 #include <iostream>
 
 #include "date.h"
+#include "client.h"
 
 int main() {
     std::cout<<("Hello World\n");
     Date new_date(2024,10,03);
-    std::cout<<new_date.toString();
+    std::cout<<new_date.toString()<<"\n";
+    Client augustin(1,"Protin","Augustin");
+    std::cout<<augustin.getName()<<"\n";
+    std::cout<<augustin.toString()<<"\n";
+
 }
