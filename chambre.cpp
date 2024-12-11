@@ -29,6 +29,7 @@ Chambre::Chambre(int num, format format_chambre, double prix_par_nuit):
     prix (prix_par_nuit)
 {}
 
-Chambre::editPrice(double newValue) {
+double Chambre::editPrice(double newValue) {
     prix = newValue;
+    return newValue
 }

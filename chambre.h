@@ -35,7 +35,7 @@ public:
 
     Chambre();
     Chambre(int num, format format_chambre, double prix_par_nuit);
-    editPrice(double newValue);
+    double editPrice(double newValue);
 };
 
 
