@@ -26,9 +26,9 @@ bool Reservation::free_room() {
 std::string Reservation::to_string() {
       return "Réservation pour M/Mme " + _client.toString() + "\n" +
            "A partir du : " + _date.toString() + "\n" +
-           "Pour une durée de : " + _nights + " nuits\n" +
+           "Pour une durée de : " + std::to_string(_nights) + " nuits\n" +
            "Dans l'Hôtel : " + _hotel.toString() + "\n" +
-           "Et dans la Chambre : " + _chambre.toString();
+           "Et dans la Chambre : " + _room.toString();
 }
 
 Hotel Reservation::get_hotel() {

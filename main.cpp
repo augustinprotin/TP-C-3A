@@ -3,9 +3,10 @@
 // Created by bapti on 11/12/2024.
 //
 #include <iostream>
-
+#include "hotel.h"
 #include "date.h"
 #include "client.h"
+#include "reservation.h"
 
 int main() {
     std::cout<<("Hello World\n");
@@ -14,5 +15,5 @@ int main() {
     Client augustin(1,"Protin","Augustin");
     std::cout<<augustin.getName()<<"\n";
     std::cout<<augustin.toString()<<"\n";
-
+    //Hotel ("K.CA3", "hotella de la mama", "Dijon district", 300);
 }

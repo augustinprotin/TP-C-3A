@@ -44,7 +44,7 @@ public:
 
     std::vector<Chambre> getResa() ;
 
-    int creationChambre(Chambre chambreAAjouter) ;
+    void creationChambre(Chambre chambreAAjouter) ;
     std::string Hotel::toString();
 };
 
