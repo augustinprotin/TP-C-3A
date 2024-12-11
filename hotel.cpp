@@ -43,3 +43,10 @@ Hotel::Hotel(std::string id, std::string name,std::string city, int size) :
     int Hotel::creationChambre(Chambre chambreAAjouter) {
         _rooms.push_back(chambreAAjouter);
     }
+
+std::string Hotel::toString() {
+    return "Id Hotel : " + std::string(_id) + "\n" +
+        "Nom Hotel : " + std::string(_name) + "\n" +
+        "Ville : " + std::string(_city) + "\n"
+        "Taille : " + std::to_string(_size) + "\n";
+}
