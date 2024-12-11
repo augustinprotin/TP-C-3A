@@ -15,5 +15,6 @@ int main() {
     Client augustin(1,"Protin","Augustin");
     std::cout<<augustin.getName()<<"\n";
     std::cout<<augustin.toString()<<"\n";
-    //Hotel ("K.CA3", "hotella de la mama", "Dijon district", 300);
+
+
 }
