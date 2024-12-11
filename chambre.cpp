@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include "chambre.h"
-class Chambre {
 
 
 int Chambre::getNumeros () {
@@ -31,5 +30,5 @@ Chambre::Chambre(int num, format format_chambre, double prix_par_nuit):
 
 double Chambre::editPrice(double newValue) {
     prix = newValue;
-    return newValue
+    return newValue;
 }
