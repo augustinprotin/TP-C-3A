@@ -7,6 +7,9 @@ add_executable(TP-C-3A main.cpp
         main.cpp
         client.h
         client.cpp
+        date.cpp
+        date.h)
+        client.cpp
         chambre.cpp
         chambre.h
         hotel.cpp
