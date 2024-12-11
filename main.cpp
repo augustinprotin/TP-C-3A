@@ -3,6 +3,11 @@
 // Created by bapti on 11/12/2024.
 //
 #include <iostream>
+
+#include "date.h"
+
 int main() {
     std::cout<<("Hello World\n");
+    Date new_date(2024,10,03);
+    std::cout<<new_date.toString();
 }
