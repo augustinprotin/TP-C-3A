@@ -33,6 +33,10 @@ std::string Reservation::to_string() {
            "Et dans la Chambre : " + _room.toString();
 }
 
+Hotel Reservation::get_hotel() {
+      return _hotel;
+}
+
 
 
 
