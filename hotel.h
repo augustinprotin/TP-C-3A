@@ -7,10 +7,45 @@
 
 
 
-class hotel {
+//
+// Created by augus on 11/12/2024.
+//
 
+#include "chambre.h"
+#include "hotel.h"
+#include <iostream>
+#include <vector>
+class Hotel {
+    ;
+
+private:
+    std::string _id;
+    std::string _name;
+    std::string _city;
+    std::vector<Chambre> _rooms;
+    int _size;
+
+public:
+    Hotel() ;
+
+
+    Hotel(std::string id, std::string name,std::string city, int size) ;
+
+
+    std::string getId() ;
+
+
+    std::string getName() ;
+
+
+    std::string getCity() ;
+
+    int getSize() ;
+
+    std::vector<Chambre> getResa() ;
+
+    int creationChambre(Chambre chambreAAjouter) ;
 };
-
 
 
 #endif //HOTEL_H

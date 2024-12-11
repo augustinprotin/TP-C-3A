@@ -14,4 +14,5 @@ add_executable(TP-C-3A main.cpp
         hotel.cpp
         hotel.h
         reservation.cpp
-        reservation.h)
+        reservation.h
+        chambre.cpp)

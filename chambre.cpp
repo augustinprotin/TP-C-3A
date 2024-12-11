@@ -3,3 +3,9 @@
 //
 
 #include "chambre.h"
+#include <iostream>
+
+class Chambre {
+
+
+};

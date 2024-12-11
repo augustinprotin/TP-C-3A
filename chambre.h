@@ -7,7 +7,7 @@
 
 
 
-class chambre {
+class Chambre {
 
 };
 
