@@ -27,7 +27,9 @@ std::string Reservation::to_string() {
 
 }
 
-get_hotel
+Hotel Reservation::get_hotel() {
+      return _hotel;
+}
 
 
 

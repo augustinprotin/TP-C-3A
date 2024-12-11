@@ -25,7 +25,7 @@ class Reservation {
         bool valid_room();
         bool free_room();
         std::string to_string();
-
+        Hotel get_hotel();
 
 
 
