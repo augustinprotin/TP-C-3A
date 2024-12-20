@@ -21,7 +21,7 @@ class Reservation {
     public:
         Reservation();
         Reservation(Hotel hotel, Chambre room, Client client,Date date,int nights);
-
+        bool valid_room();
         bool free_room();
         std::string to_string();
         int get_nights();

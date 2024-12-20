@@ -16,7 +16,6 @@
 #include <iostream>
 #include <vector>
 class Hotel {
-    ;
 
 private:
     std::string _id;
@@ -27,17 +26,9 @@ private:
 
 public:
     Hotel() ;
-
-
     Hotel(std::string id, std::string name,std::string city, int size) ;
-
-
     std::string getId() ;
-
-
     std::string getName() ;
-
-
     std::string getCity() ;
 
     int getSize() ;
@@ -45,7 +36,7 @@ public:
     std::vector<Chambre> getResa() ;
 
     void creationChambre(Chambre chambreAAjouter) ;
-    std::string Hotel::toString();
+    std::string toString();
 };
 
 
