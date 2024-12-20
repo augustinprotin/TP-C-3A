@@ -40,7 +40,7 @@ Hotel::Hotel(std::string id, std::string name,std::string city, int size) :
         return _rooms;
     }
 
-    int Hotel::creationChambre(Chambre chambreAAjouter) {
+    void Hotel::creationChambre(Chambre chambreAAjouter) {
         _rooms.push_back(chambreAAjouter);
     }
 
