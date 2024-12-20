@@ -16,6 +16,7 @@ Reservation::Reservation(Hotel hotel, Chambre room, Client client, Date date, in
       : _hotel(hotel),_room(room),_client(client),_date(date),_nights(nights),_price(price) {};
 
 bool Reservation::valid_room() {
+
       bool okay=false;
       for(Chambre i: _hotel.getResa()) {
             if (i.getNumeros()==_room.getNumeros()){
