@@ -3,7 +3,7 @@
 //
 
 #include "reservation.h"
-
+#include "hotel.cpp"
 
 #include <algorithm>
 Reservation::Reservation() : _client(0, "", ""),
@@ -14,11 +14,14 @@ Reservation::Reservation() : _client(0, "", ""),
       _price(0) {}
 Reservation::Reservation(Hotel hotel, Chambre room, Client client, Date date, int nights, int price)
       : _hotel(hotel),_room(room),_client(client),_date(date),_nights(nights),_price(price) {};
+
 bool Reservation::valid_room() {
-      if (std::find(_hotel.getResa().begin(),_hotel.getResa().end(), _room) != _hotel.getResa().end) {//fonction pour savoir si la chambre est dans la liste des chambres de l hotel
-            return true;
+      bool okay=false;
+      for(Chambre i: _hotel.getResa()) {
+            if (i.getNumeros()==_room.getNumeros()){
+                  return true;
+            }
       }
-      return false;
 }
 
 bool Reservation::free_room() {
