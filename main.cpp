@@ -6,9 +6,9 @@
 
 #include "chambre.h"
 #include "reservation.h"
+#include "hotel.h"
 #include "date.h"
 #include "client.h"
-#include "hotel.h"
 
 int main() {
     std::cout<<("Hello World\n");
